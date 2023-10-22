@@ -2,7 +2,7 @@
 
 # Run:
 Compile using:
-g++ backwardChain.h backwardChain.cpp forwardChain.h forwardChain.cpp Project1-A05170831.cpp
+g++ backwardChain.h backwardChain.cpp forwardChain.h forwardChain.cpp main.cpp
 
 And then run using:
 ./a.exe
