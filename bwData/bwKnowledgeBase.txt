@@ -1,0 +1,31 @@
+IF sick=NO THEN poisoning=NULL
+IF sick=YES and vomiting=NO and diziness=NO THEN poisoning=NULL
+IF sick=YES and vomiting=NO and diziness=YES and constipation=YES THEN poisoning=VinylChloride
+IF sick=YES and vomiting=NO and diziness=YES and constipation=NO and StingingSensation=YES THEN poisoning=Chloroform
+IF sick=YES and vomiting=NO and diziness=YES and constipation=NO and StingingSensation=NO THEN poisoning=NULL
+IF sick=YES and vomiting=YES THEN PossibilityOfPoisoning=YES
+IF PossibilityOfPoisoning=YES and moodDisorders=NO and headache=YES and bloodInUrine=NO THEN poisoning=NULL
+IF PossibilityOfPoisoning=YES and moodDisorders=NO and headache=YES and bloodInUrine=YES THEN poisoning=Arsenic
+IF PossibilityOfPoisoning=YES and moodDisorders=NO and headache=NO and numbness=NO and MetallicTasteInMouth=YES and diarrhea=YES THEN poisoning=Arsenic
+IF PossibilityOfPoisoning=YES and moodDisorders=NO and headache=NO and numbness=NO and MetallicTasteInMouth=YES and diarrhea=NO and memoryProblems=NO and stomachCramps=YES THEN poisoning=Arsenic
+IF PossibilityOfPoisoning=YES and moodDisorders=NO and headache=NO and numbness=NO and MetallicTasteInMouth=YES and diarrhea=NO and memoryProblems=NO and stomachCramps=NO and LossOfAppetite=YES THEN poisoning=Lead
+IF PossibilityOfPoisoning=YES and moodDisorders=NO and headache=NO and numbness=NO and MetallicTasteInMouth=YES and diarrhea=NO and memoryProblems=NO and stomachCramps=NO and LossOfAppetite=NO and DifficultyInBreathing=YES THEN poisoning=Lead
+IF PossibilityOfPoisoning=YES and moodDisorders=NO and headache=NO and numbness=NO and MetallicTasteInMouth=YES and diarrhea=NO and memoryProblems=NO and stomachCramps=NO and LossOfAppetite=NO and DifficultyInBreathing=NO and irritability=NO THEN poisoning=Lead
+IF PossibilityOfPoisoning=YES and moodDisorders=NO and headache=NO and numbness=NO and MetallicTasteInMouth=YES and diarrhea=NO and memoryProblems=NO and stomachCramps=NO and LossOfAppetite=NO and DifficultyInBreathing=NO and irritability=YES THEN poisoning=Mercury
+IF PossibilityOfPoisoning=YES and moodDisorders=NO and headache=NO and numbness=NO and MetallicTasteInMouth=YES and diarrhea=NO and memoryProblems=YES and nuasea=YES THEN poisoning=Mercury
+IF PossibilityOfPoisoning=YES and moodDisorders=NO and headache=NO and numbness=NO and MetallicTasteInMouth=YES and diarrhea=NO and memoryProblems=YES and nuasea=NO and DifficultyInBreathing=YES THEN poisoning=Lead 
+IF PossibilityOfPoisoning=YES and moodDisorders=NO and headache=NO and numbness=NO and MetallicTasteInMouth=YES and diarrhea=NO and memoryProblems=YES and nuasea=NO and DifficultyInBreathing=NO and irritability=NO THEN poisoning=Lead
+IF PossibilityOfPoisoning=YES and moodDisorders=NO and headache=NO and numbness=NO and MetallicTasteInMouth=YES and diarrhea=NO and memoryProblems=YES and nuasea=NO and DifficultyInBreathing=NO and irritability=YES THEN poisoning=Mercury
+IF PossibilityOfPoisoning=YES and moodDisorders=NO and headache=NO and numbness=NO and MetallicTasteInMouth=NO and memoryProblems=NO and stomachCramps=YES THEN poisoning=Arsenic
+IF PossibilityOfPoisoning=YES and moodDisorders=NO and headache=NO and numbness=NO and MetallicTasteInMouth=NO and memoryProblems=NO and stomachCramps=NO and LossOfAppetite=YES THEN poisoning=Lead
+IF PossibilityOfPoisoning=YES and moodDisorders=NO and headache=NO and numbness=NO and MetallicTasteInMouth=NO and memoryProblems=NO and stomachCramps=NO and LossOfAppetite=NO and DifficultyInBreathing=YES THEN poisoning=Lead
+IF PossibilityOfPoisoning=YES and moodDisorders=NO and headache=NO and numbness=NO and MetallicTasteInMouth=NO and memoryProblems=NO and stomachCramps=NO and LossOfAppetite=NO and DifficultyInBreathing=NO and irritability=NO THEN poisoning=Lead
+IF PossibilityOfPoisoning=YES and moodDisorders=NO and headache=NO and numbness=NO and MetallicTasteInMouth=NO and memoryProblems=NO and stomachCramps=NO and LossOfAppetite=NO and DifficultyInBreathing=NO and irritability=YES THEN poisoning=Mercury
+IF PossibilityOfPoisoning=YES and moodDisorders=NO and headache=NO and numbness=NO and MetallicTasteInMouth=NO and memoryProblems=YES and nuasea=YES THEN poisoning=Mercury
+IF PossibilityOfPoisoning=YES and moodDisorders=NO and headache=NO and numbness=NO and MetallicTasteInMouth=NO and memoryProblems=YES and nuasea=NO and DifficultyInBreathing=YES THEN poisoning=Lead 
+IF PossibilityOfPoisoning=YES and moodDisorders=NO and headache=NO and numbness=NO and MetallicTasteInMouth=NO and memoryProblems=YES and nuasea=NO and DifficultyInBreathing=NO and irritability=NO THEN poisoning=Lead
+IF PossibilityOfPoisoning=YES and moodDisorders=NO and headache=NO and numbness=NO and MetallicTasteInMouth=NO and memoryProblems=YES and nuasea=NO and DifficultyInBreathing=NO and irritability=YES THEN poisoning=Mercury
+IF PossibilityOfPoisoning=YES and moodDisorders=NO and headache=NO and numbness=YES THEN poisoning=Mercury
+IF PossibilityOfPoisoning=YES and moodDisorders=YES and depression=NO and highBloodPressure=NO THEN poisoning=NULL
+IF PossibilityOfPoisoning=YES and moodDisorders=YES and depression=NO and highBloodPressure=YES THEN poisoning=Lead
+IF PossibilityOfPoisoning=YES and moodDisorders=YES and depression=YES THEN poisoning=Mercury
